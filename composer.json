@@ -1,0 +1,48 @@
+{
+  "name": "mylistryx/yii2-bootstrap-icon",
+  "description": "Yii2 Bootstrap Icons font and helper",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "type": "yii2-extension",
+  "authors": [
+    {
+      "name": "Sergey Zhukovskiy",
+      "email": "mylistryx@gmail.com",
+      "homepage": "https://net23.ru"
+    }
+  ],
+  "keywords": [
+    "yii2",
+    "bootstrap5",
+    "bootstrap5 icons",
+    "icons",
+    "asset",
+    "bundle",
+    "free",
+    "font"
+  ],
+  "version": "1.0.0",
+  "readme": "README.md",
+  "autoload": {
+    "psr-4": {
+      "yii\\bootstrap5\\": "src/"
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
+  "require": {
+    "php": ">=8.2",
+    "yiisoft/yii2": "~2.0.50",
+    "yiisoft/yii2-bootstrap5": "~2.0.0",
+    "twbs/bootstrap-icons": "v1.11.3"
+  },
+  "config": {
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true
+    }
+  }
+}

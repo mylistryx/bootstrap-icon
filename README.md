@@ -19,3 +19,7 @@ Either run: `composer require mylistryx/yii2-bootstrap-icon`  or add `"yii2-boot
 Then register assets in your view file: `\yii\bootstrap5\BootstrapIconAsset::register($this)`
 
 To use helper just write `<?= \yii\bootstrap5\BI:i('icon-name) ?>` in your template
+
+Custom usage:
+
+`<?= \yii\bootstrap5\BI:i('accordion')->addCssClass('text-danger')->addDataAttribute('error-icon') ?>`

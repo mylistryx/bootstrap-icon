@@ -13,15 +13,21 @@
   ],
   "keywords": [
     "yii2",
+    "bootstrap",
+    "bootstrap3",
+    "bootstrap4",
     "bootstrap5",
+    "bootstrap icons",
+    "bootstrap4 icons",
     "bootstrap5 icons",
     "icons",
     "asset",
     "bundle",
     "free",
-    "font"
+    "font",
+    "helper"
   ],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "readme": "README.md",
   "autoload": {
     "psr-4": {

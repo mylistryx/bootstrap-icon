@@ -47,12 +47,24 @@ class BI
      * @param string $class
      * @param bool $condition
      * @param string|null $throw
-     * @return static
+     * @return $this
      */
     public function addCssClass(string $class, bool $condition = true, ?string $throw = null): static
     {
         Html::addCssClass($this->options, $class);
 
+        return $this;
+    }
+
+    /**
+     * @param string $attribute
+     * @param mixed $value
+     * @return $this
+     */
+    public function addDataAttribute(string $attribute, mixed $value): static
+    {
+        $key = 'data-' . $attribute;
+        $this->options[$key] = $value;
         return $this;
     }
 
@@ -70,7 +82,7 @@ class BI
     /**
      * @param array|string $style
      * @param bool $overwrite
-     * @return static
+     * @return $this
      */
     public function addCssStyle(array|string $style, bool $overwrite = true): static
     {
